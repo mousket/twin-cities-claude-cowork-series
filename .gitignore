@@ -1,0 +1,15 @@
+**/recording/*
+!**/recording/.gitkeep
+**/homework/*
+!**/homework/.gitkeep
+.DS_Store
+*.zip
+
+# private working files
+series-ideas/
+cowork_series_v1.md
+_to_delete/
+
+# local test unzip and app output folders
+birchwood-starter-kit/
+Claude outputs/

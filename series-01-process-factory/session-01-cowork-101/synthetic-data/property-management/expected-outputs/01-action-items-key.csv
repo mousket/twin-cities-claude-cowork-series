@@ -1,0 +1,12 @@
+id,source,action,owner,due,flag
+T1-1,2026-09-08 staff meeting,Post Birch Lane unit 7 listing and email the waitlist,Priya Nair,2026-09-16,
+T1-2,2026-09-08 staff meeting,Call Lakeside HVAC to schedule boiler pump (install target 2026-09-18),Marcus Bell,2026-09-11,Already Done in action-tracker.csv
+T1-3,2026-09-08 staff meeting,Send September delinquency report to Dana,Tom Okafor,2026-09-10,Already Done in action-tracker.csv
+T1-4,2026-09-08 staff meeting,Send revised move-out inspection checklist (48-hour standard),Dana Whitfield,2026-09-15,
+T1-5,2026-09-08 staff meeting,Call the Alder Court 3B tenant about noise before a formal notice,UNASSIGNED (Elena or Priya),no date ("this week"),TRAP: no owner was ever confirmed. Priya said "maybe"; Elena declined. Dana said "we'll see".
+T2-1,2026-09-15 owner call,Send signed acceptance of Reyes quote ($18,200),Elena Ruiz,2026-09-18,Quote valid through 2026-10-15
+T2-2,2026-09-15 owner call,Draft pet rent addendum ($45 new leases only) for owner review,Elena Ruiz,2026-09-25,
+T2-3,2026-09-15 owner call,Send first monthly owner report (occupancy, collections, spend) for September,Dana Whitfield,2026-10-05,Recurring: by the 5th of each month
+T3-1,2026-09-22 boiler walkthrough,Get Dana's approval for $620 expansion tank,Marcus Bell,asap (said "today"),Policy: over $500 needs Dana. No transcript shows she answered.
+T3-2,2026-09-22 boiler walkthrough,Notify Alder Court tenants of new install date (Fri 2026-09-25),Marcus Bell,2026-09-22,
+T3-3,2026-09-22 boiler walkthrough,Log slow boiler-room floor drain as a routine request,Marcus Bell,none stated,Routine = within 5 business days
