@@ -2,18 +2,23 @@
 
 | File | Purpose |
 |---|---|
-| `01-before-you-come.html` | Pre-meeting check: plan, desktop app, 3-minute practice test, privacy, logistics, troubleshooting, glossary |
-| `02-get-the-starter-kit.html` | How to get and unzip the kit from Google Drive or GitHub, and how to confirm the right folder |
+| `01-before-you-start.html` | Before You Start: what you need (internet, computer, browser, paid Claude plan, desktop app, VS Code, GitHub or Google account), 3-minute practice test, privacy, session outline, live-meetup logistics, troubleshooting, glossary |
+| `02-get-the-starter-kit.html` | How to get and unzip the kit from GitHub Releases or Google Drive, and how to confirm the right folder |
 
-Both are single self-contained files (no internet needed once downloaded), work on phones, and follow the reader's light or dark setting.
+Both are single self-contained files (they only reach out for web fonts, with fallbacks), work on phones, follow the reader's light or dark setting, and remember checklist ticks in the reader's own browser.
 
-## Before you share them
-1. Open each file in a text editor and find the line `window.COWORK_LINKS = { drive: "", github: "" };`. Paste your Google Drive and GitHub URLs between the quotes in **both** files. Until you do, the buttons say "link to be posted on the Meetup page".
-2. In `02-get-the-starter-kit.html`, the GitHub clone command shows `REPO-URL-FROM-THE-GITHUB-PAGE`. Replace it with your repository's clone URL.
-3. Rebuild the kit (`python3 scripts/make_kit.py`) so the zip carries the final copies in `before-you-come/`.
+## Where they are published
+Published copies and their URLs are listed in `PUBLISHED.md` at the repo root. The files here are the source. To update a published page, republish it from the file here; the URL stays the same.
 
-## Getting them to attendees before they have the kit
-Attendees need these pages before they have the kit, so they can't live only inside the zip. Options: publish them as shareable pages and put the links in the Meetup update, attach the two HTML files to the Meetup message, or enable GitHub Pages on the repository.
+## Settings in the files
+Each file has a `window.COWORK_LINKS = { ... }` line near the bottom:
+- `github`: the repository URL (set).
+- `drive`: the Google Drive link. **Empty for now**; while empty, the Drive card is hidden. Paste the link in both the published page and these files when it exists.
+- `kit` and `before`: links between the two pages (relative in these files, full URLs in the published copies).
+- The "latest release" button is derived from `github`.
+
+## Before each session
+Create the GitHub Release with the zip (`gh release create session-01 birchwood-starter-kit.zip --title "Session 1 starter kit"`), upload the same zip to Drive, then fill in `drive`.
 
 ## Facts these pages rely on (checked October 2, 2026)
 Paid plans only; macOS 11+ or Windows 10+ desktop app; "Cowork" is selected in the message box; Cowork uses more allowance than chat; scheduled tasks are under "Scheduled" in the sidebar. **Not verified:** the exact folder-picker steps and labels, Linux support, how much allowance the session uses.

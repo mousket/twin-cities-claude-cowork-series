@@ -8,10 +8,13 @@
 ## What's here
 | Folder | Purpose |
 |---|---|
-| `instructions/` | Run-of-show, prep and sleep test, attendee messages, room and recording checklist (instructor only) |
+| `pre-session/` | Public guides: Before You Start (what you need, practice test) and Get the starter kit |
+| `at-home/` | Public step-by-step to reproduce the session alone (written after the session) |
+| `instructions/` | Run-of-show, prep and sleep test, attendee messages, room and recording checklist (instructor) |
+| `instructions/concepts-and-terminology/` | Public glossary, concepts and further reading |
 | `synthetic-data/property-management/inputs/` | The pretend company's files (docs, meeting transcripts, data) |
 | `synthetic-data/property-management/expected-outputs/` | Answer keys and traps (instructor only) |
-| `starter-kit/` | What attendees see: START-HERE, prompts, scheduled-task prompt |
+| `starter-kit/` | What attendees see: START-HERE, **SESSION-PLAN** (the participant plan, usable live or alone), prompts, scheduled-task prompt |
 | `deck/` | Slides (not yet built) |
 | `homework/` | Collected homework, if any |
 | `recording/` | Raw and edited recording (keep out of git) |

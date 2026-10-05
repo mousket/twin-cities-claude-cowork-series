@@ -12,4 +12,5 @@ _to_delete/
 
 # local test unzip and app output folders
 birchwood-starter-kit/
-Claude outputs/
+artifacts/
+preparation/

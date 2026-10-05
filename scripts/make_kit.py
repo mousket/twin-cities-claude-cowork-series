@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build birchwood-starter-kit.zip for Session 1 from the repo tree.
-Includes: START-HERE.md, before-you-come/ (2 HTML guides), prompts/, birchwood-folder/ (the synthetic inputs).
+Includes: START-HERE.md, before-you-start/ (2 HTML guides), SESSION-PLAN.md, prompts/, birchwood-folder/ (the synthetic inputs).
 Excludes: expected-outputs/ (answer keys) and instructor docs.
 The zip is deterministic (fixed timestamps, sorted order), so rebuilding gives identical bytes."""
 import zipfile, pathlib
@@ -19,9 +19,9 @@ def add(z, src, arc):
     info.external_attr = 0o644 << 16
     z.writestr(info, pathlib.Path(src).read_bytes())
 
-entries = [(kit / "START-HERE.md", f"{top}/START-HERE.md")]
+entries = [(kit / "START-HERE.md", f"{top}/START-HERE.md"), (kit / "SESSION-PLAN.md", f"{top}/SESSION-PLAN.md")]
 for p in sorted(pre.glob("*.html")):
-    entries.append((p, f"{top}/before-you-come/{p.name}"))
+    entries.append((p, f"{top}/before-you-start/{p.name}"))
 for p in sorted((kit / "prompts").glob("*.md")):
     entries.append((p, f"{top}/prompts/{p.name}"))
 entries.append((kit / "scheduled-task" / "monday-digest-prompt.md", f"{top}/prompts/scheduled-task-prompt.md"))
